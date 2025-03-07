@@ -5,13 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>얍얍돌이의 포트폴리오</title>
+        <title>얍얍돌이의 포트폴리오 v1</title>
+        <link rel="icon" href="assets/images/yapyap.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
         <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
         <link rel="stylesheet" href="assets/css/owl-carousel.css">
         <link rel="stylesheet" href="assets/css/lightbox.css">
+        <link rel="stylesheet" href="assets/css/index-popup.css">
     </head>
     
     <body>
@@ -21,7 +23,25 @@
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>
+
+    <button onclick="showPopup()">팝업 열기</button>
+
+    <div id="popup">
+        <div class="container">
+            <img class="img-fluid" src="assets/images/yapyap-v2.png" alt="팝업 이미지">
+            <div>
+                <h5 class="text-center text-secondary">새로운 버전의 포트폴리오가 나왔습니다</h5>
+                <p class="text-center text-secondary">연결 하시겠습니까?</p>
+                <p><br/></p>
+            </div>
+            <div class="popup-buttons">
+                <button class="btn-sm btn-secondary" onclick="goToLink()">YES</button>&nbsp;&nbsp;&nbsp;
+                <button class="btn-sm btn-primary" onclick="closePopup()">NO</button>
+            </div>
+        </div>
+    </div>
+
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
@@ -39,9 +59,9 @@
                                 <a href="javascript:;">프로젝트들</a>
                                 <ul>
                                     <li><a href="https://fastidious-toffee-be993e.netlify.app/">쇼핑몰(팀프로젝트)</a></li>
+                                    <li><a href="https://pauljeoung.github.io/absolute_corp/">회사사이트구축(사이트제작)</a></li>
                                     <li><a href="https://pauljeoung.github.io/proj-artcook/">Onepage(개인프로젝트)</a></li>
                                     <li><a href="https://pauljeoung.github.io/tourlist-in-tour/">여행사이트(과제제출)</a></li>
-                                    <li><a href="https://pauljeoung.github.io/absolute_corp/">자석회사사이트(소규모프로젝트)</a></li>
                                 </ul>
                             </li>
                             <li class="submenu">
@@ -651,7 +671,7 @@
                 <div class="col-lg-3">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><a href="https://runningpaul.notion.site/I-m-Backend-Developer-6d9fbf4bdeb049349ae2d4bc5e9fbb6b">노션이력서</a></li>
+                        <li><a href="https://prickly-sparrow-0cb.notion.site/Backend-Developer-Applicant-193228727bfa8016bce7ce0148f384d3">노션이력서</a></li>
                         <li><a href="https://qbase.kr/users/public/career/detail?careerInfoId=55">QA커리어</a></li>
                         <li><a href="https://github.com/PaulJeoung">Github</a></li>
                     </ul>
@@ -662,17 +682,18 @@
                         <p>Copyright © 2025 얍얍돌이의 포트폴리오 Co., Ltd. All Rights Reserved. 
                         
                         <ul>
-                            <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
-                            <li><a href="https://kr.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://github.com/PaulJeoung"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://blog.naver.com/pauljeoung"><i class="fa fa-file-text"></i></a></li>
+                            <li><a href="https://passorfail.tistory.com"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="https://prickly-sparrow-0cb.notion.site/Backend-Developer-Applicant-193228727bfa8016bce7ce0148f384d3"><i class="fa fa-folder-open"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    
+
+    <script src="assets/js/index-popup.js"></script>
     <script src="assets/js/jquery-2.1.0.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

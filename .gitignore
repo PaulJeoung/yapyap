@@ -1,0 +1,14 @@
+# macOS 시스템 파일
+.DS_Store
+
+# 로그 및 환경 설정 파일
+*.log
+.env
+
+# 빌드 관련 파일
+build/
+dist/
+*.egg-info/
+
+# /export 폴더 내의 모든 파일 무시
+/export/
